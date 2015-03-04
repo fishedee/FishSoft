@@ -1,12 +1,12 @@
 #!/bin/sh
-#¸üĞÂ¿â
+#æ›´æ–°åº“
 sudo apt-get update
 
-#°²×°»ù´¡±àÒëÆ÷
+#å®‰è£…åŸºç¡€ç¼–è¯‘å™¨
 sudo apt-get install g++ -y
 sudo apt-get install openjdk-6-jdk -y
 
-#°²×°nginx-php-mysqlÒ»ÌõÁú
+#å®‰è£…nginx-php-mysqlä¸€æ¡é¾™
 sudo apt-get install apache2 -y
 sudo apt-get install nginx -y
 sudo apt-get install mysql-server-5.6 -y
@@ -19,10 +19,9 @@ sudo apt-get install php5-mcrypt -y
 sudo apt-get install php5-mysql -y
 sudo apt-get install php5-mysqlnd -y
 
-#°²×°nodejsÓënpm
-sudo add-apt-repository ppa:chris-lea/node.js
-sudo apt-get update
-sudo apt-get install    nodejs
-node  --version
+#å®‰è£…nodejsä¸npm
+sudo apt-get install nodejs-legacy -y
+sudo ln -s /usr/bin/nodejs /usr/sbin/node
+sudo apt-get install npm -y
+node -v
 npm -v
-sudo npm install -g npm

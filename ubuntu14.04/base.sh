@@ -23,13 +23,15 @@ sudo apt-get install php5-mysqlnd -y
 sudo apt-get install nodejs-legacy -y
 sudo ln -s /usr/bin/nodejs /usr/sbin/node
 sudo apt-get install npm -y
+sudo npm install -g cnpm --registry=http://registry.npm.taobao.org
 node -v
 npm -v
+cnpm -v
 
 #安装hhvm
 sudo apt-get install software-properties-common
 sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0x5a16e7281be7a449
 sudo add-apt-repository 'deb http://mirrors.hypo.cn/hhvm/ubuntu trusty main'
 sudo apt-get update
-sudo apt-get install hhvm
+sudo apt-get install hhvm -y
 
